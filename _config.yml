@@ -37,7 +37,7 @@ exclude:
 
 feedback_subject_line: Nero documentation 
 
-feedback_email: cdoane@stanford.edu
+feedback_email: srcc-support@stanford.edu
 # used as a contact email for the Feedback link in the top navigation bar
 
 # feedback_disable: true
@@ -107,7 +107,7 @@ sidebars:
 - user_guide_sidebar
 - other
 
-description: "Intended as a documentation theme based on Jekyll for technical writers documenting software and other technical products, this theme has all the elements you would need to handle multiple products with both multi-level sidebar navigation, tags, and other documentation features."
+description: "Nero Cluster documentation"
 # the description is used in the feed.xml file
 
 # needed for sitemap.xml file only

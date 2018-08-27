@@ -151,7 +151,7 @@ section][url_submit].
 [url_sunet]:        https://uit.stanford.edu/service/accounts/sunetids
 [url_minsec]:       https://uit.stanford.edu/guide/securitystandards
 [url_twostep]:      https://uit.stanford.edu/service/webauth/twostep
-[url_submit]:       /submitting.html
+[url_submit]:       /nero2/submitting.html
 [url_contact]:      mailto:srcc-support@stanford.edu
 [url_vpn]:          https://uit.stanford.edu/service/vpn
 

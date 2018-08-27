@@ -1,14 +1,13 @@
 ---
-title: Sample 7 Topic
+title: Storage
 keywords: sample
 summary: "This is just a sample topic..."
-sidebar: product2_sidebar
-permalink: p2_sample7.html
-complex_map: true
-map_name: usermapcomplex
+sidebar: home_sidebar
+permalink: storage.html
+simple_map: true
+map_name: usermap
 box_number: 1
-toc: false
-folder: product2
+folder: userguide
 ---
 
 

@@ -20,7 +20,20 @@ entries:
       - title: Submitting
         url: /submitting.html
         output: web, pdf
-
+  - title: User Guide
+    output: web
+    folderitems:
+      - title: Overview
+        url: /user_guide_landing_page.html
+        output: web
+      - title: Storage
+        url: /storage.html
+        output: web
+      - title: Running Jobs
+        url: /running_jobs.html
+        output: web
+      - title: Troubleshooting
+        url: /troubleshooting.html
         output: web
   - title: News
     url: /news.html

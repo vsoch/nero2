@@ -1,19 +1,17 @@
 ---
 title: Submitting to Slurm
 keywords: submitting
-summary: "This is just a sample topic..."
-sidebar: getting-started_sidebar
+sidebar: home_sidebar
 permalink: submitting.html
 folder: getting-started
 ---
 
-## Principle
+## Basics
 
-!!! danger "Login nodes are not for computing"
-
-    Login nodes are shared among many users and therefore must not be used to
-    run computationally intensive tasks. Those should be submitted to the
-    scheduler which will dispatch them on compute nodes.
+{% include warning.html content="Login nodes are not for computing<br/>
+Login nodes are shared among many users and therefore must not be used to
+run computationally intensive tasks. Those should be submitted to the
+scheduler which will dispatch them on compute nodes." %}
 
 ### Requesting resources
 
@@ -33,18 +31,6 @@ The scheduler provides three key functions:
 
 ### Slurm
 
-<!-- HTML interlude for the main page logo -->
-<style>
-@media only screen and (max-width: 720px) {
-    #logo_head {
-        display: none;
-    }
-}
-</style>
-<img id="slurm_logo" align="right" height="115px"
-     alt="Slurm" src="https://slurm.schedmd.com/slurm_logo.png"/>
-
-
 Nero uses [Slurm][url_slurm], an open-source resource manager and job
 scheduler, used by many of the world's [supercomputers and computer
 clusters][url_top500].
@@ -53,15 +39,12 @@ clusters][url_top500].
 Slurm supports a variety of job submission techniques. By accurately requesting
 the resources you need, you’ll be able to get your work done.
 
-!!! tip "Wait times in queue"
-
-    As a quick rule of thumb, it's important to keep in mind that the more
-    resources your job requests (CPUs, GPUs, memory, nodes, and time), the
-    longer it may have to wait in queue before it could start.
-
-    In other words:
-    accurately requesting resources to match your job's needs will minimize
-    your wait times.
+{% include tip.html content="Wait times in queue<br/>
+As a quick rule of thumb, it's important to keep in mind that the more
+resources your job requests (CPUs, GPUs, memory, nodes, and time), the
+longer it may have to wait in queue before it could start.<br/>
+In other words, accurately requesting resources to match your job's needs 
+will minimize your wait times." %}
 
 
 ## How to submit a job
@@ -79,7 +62,7 @@ memory, expected run time, etc.) that the job will need to successfully run.
 The typical way of creating a job is to write a job submission script. A
 submission script is a shell script (e.g. a Bash script) whose first comments,
 if they are prefixed with `#SBATCH`, are interpreted by Slurm as parameters
-describing resource requests and submissions options[^man_sbatch].
+describing resource requests and submissions options.
 
 The submission script itself is a job step. Other job steps are created with
 the `srun` command.
@@ -108,11 +91,11 @@ allocated. Then, a second job step will start the `sleep` command.
 You can create this job submission script on Nero using a [text
 editor][url_texteditors] such as `nano` or `vim`, and save it as `submit.sh`.
 
-!!! warning "Slurm directives must be at the top of the script"
+{% include warning.html content="Slurm directives must be at the top of the script<br/>
+Slurm will ignore all `#SBATCH` directives after the first non-comment
+line.  Always put your `#SBATCH` parameters at the top of your batch
+script." %}
 
-    Slurm will ignore all `#SBATCH` directives after the first non-comment
-    line.  Always put your `#SBATCH` parameters at the top of your batch
-    script.
 
 ### Job submission
 
@@ -158,9 +141,10 @@ Congratulations, you've submitted your first batch job on Nero!
 ##  What's next?
 
 Actually, quite a lot. Although you now know how to submit a simple batch job,
-there are many other options and areas to explore in the next sections:
+there are many other options.
+You can get the complete list of parameters by referring to the
+`sbatch` manual page (`man sbatch`). 
 
-* [Running jobs][url_runningjobs]
 
 
 
@@ -170,14 +154,6 @@ there are many other options and areas to explore in the next sections:
 [url_top500]: https://top500.org
 
 [url_texteditors]:    prerequisites/#text-editors
-[url_running]:        /docs/user-guide/running-jobs/
 
-#[url_transfer]:       /docs/user-guide/storage/data-transfer
-#[url_storage]:        /docs/user-guide/storage
-[url_runningjobs]:    /docs/user-guide/running-jobs/
 
-[comment]: #  (footnotes -----------------------------------------------------)
-
-[^man_sbatch]: You can get the complete list of parameters by referring to the
-  `sbatch` manual page (`man sbatch`).
 {% include links.html %}

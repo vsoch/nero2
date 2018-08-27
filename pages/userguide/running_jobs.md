@@ -1,13 +1,14 @@
 ---
-title: Sample 4 Topic
+title: Running Jobs
 keywords: sample
 summary: "This is just a sample topic..."
-sidebar: product2_sidebar
-permalink: p2_sample4.html
-simple_map: true
-map_name: usermap
-box_number: 4
-folder: product2
+sidebar: home_sidebar
+permalink: running_jobs.html
+complex_map: true
+map_name: usermapcomplex
+box_number: 2
+toc: false
+folder: userguide
 ---
 
 ## Sample Content

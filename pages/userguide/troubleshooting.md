@@ -1,13 +1,14 @@
 ---
-title: Sample 5 Topic
-keywords: sample
+title: Troubleshooting
+keywords: troubleshooting
 summary: "This is just a sample topic..."
-sidebar: product2_sidebar
-permalink: p2_sample5.html
-simple_map: true
-map_name: usermap
-box_number: 5
-folder: product2
+sidebar: home_sidebar
+permalink: troubleshooting.html
+complex_map: true
+map_name: usermapcomplex
+box_number: 2
+toc: false
+folder: userguide
 ---
 
 ## Sample Content

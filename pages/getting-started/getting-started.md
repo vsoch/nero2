@@ -1,28 +1,30 @@
 ---
-title: Getting Started
+title: Prerequisites
 keywords: start
-summary: "This is just a sample topic..."
-sidebar: getting-started_sidebar
+summary: "General overview about the prerequisites to using the Nero Onprem Cluster"
+sidebar: home_sidebar
 permalink: getting-started.html
 folder: getting-started
 ---
 
-# Basics
+## Basics
 To start using Nero, you will need:
 
 * an active [SUNet ID][url_sunet]
 * a [Nero account][url_request]
+* set up Cisco AnyConnect for connecting to [Stanford VPN][url_vpn]
 * a [SSH client][url_ssh]
 * some familiarity with [Unix/Linux command-line environments][url_unix], and
   notions of [shell scripting][url_bash].
 
-## How to request a SUNet ID
-{% include note.html content="SUNet ID [service levels][url_level] and external collaborators" %}
+## Active SUNet ID
+Most faculty and staff members should have an active SUNet ID and SUNet base level service is sufficient for using Nero.
 
-   Base-level service is sufficient for Nero accounts. External
-   collaborators, or users without a SUNet ID, can be sponsored by a PI a
+{% include note.html content="External
+   collaborators, or users without a SUNet ID, can be sponsored by a PI and
    get a sponsored SUNet ID at no cost. Please see the [sponsorship
-   page][url_sponsor] for more information.
+   page][url_sponsor] for more information." %}
+
 
 ## How to request a Nero account
 
@@ -34,14 +36,19 @@ Nero is open to the Stanford community as a computing resource to support
 departmental or sponsored research, thus a faculty member's explicit consent is
 required for account requests.
 
-    Nero is a resource to help and support research, and is not suitable
-    for course work, class assignments or general-use training sessions.
+Nero is a resource to help and support research, and is not suitable for course work, 
+class assignments or general-use training sessions.
 
 There is no fee associated with using Nero, and no limit in the amount of
 accounts each faculty member can request. We will periodically ensure that all
 accounts associated with each PI are still active, and reserve the right to
 close any Nero account whose SUNet ID is expired.
 
+
+
+## Connect to Stanford VPN
+You MUST be connected to the Stanford VPN to connect to the Nero onprem system; information about
+utilizing the Stanford VPN  and configuring Cisco AnyConnect is available at [Stanford VPN Info][url_vpn]
 
 
 ## SSH clients
@@ -127,6 +134,7 @@ For an introduction to shell scripting, you can refer to:
 [url_sunet]:        https://uit.stanford.edu/service/accounts/sunetids
 [url_level]:        https://uit.stanford.edu/service/accounts/sunetids#services
 [url_sponsor]:      https://uit.stanford.edu/service/sponsorship/
+[url_vpn]:          https://vpn.stanford.edu
 
 [url_openssh]:      https://www.openssh.com/
 [url_wsl]:          https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux

@@ -10,12 +10,10 @@ topnav:
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
-    - title: User Documentation
+    - title: Documentation
       folderitems:
         - title: Getting Started
           url: /getting-started.html
-        - title: Product 2
-          url: /p2_landing_page.html
     - title: Other Resources
       folderitems:
         - title: Stanford Research Computing Center

@@ -1,41 +1,36 @@
 ---
 title: Connecting to Nero Cluster
 keywords: connecting
-summary: "More details on how to connect to Nero Cluster"
-sidebar: getting-started_sidebar
+sidebar: home_sidebar
 permalink: connecting.html
 folder: getting-started
 ---
-# Connecting <small>to Nero </small>
-
-!!! warning "Nero account required"
-
-    To be able to connect to Nero, you must first obtain a [Nero
-    account][url_account].
-
+# Connecting to Nero
 
 ## Credentials
 
 All users must have a [Stanford SUNet ID][url_sunet] and a [Nero
-account][url_account] to log in to Nero. Your Nero account uses the
-same username/password as your SUnet ID:
-
-    Username: SUNet ID
-    Password: SUNet ID password
+account][url_account] to log in to the Nero Onprem Cluster. 
+Your Nero account uses the same username/password as your SUnet ID:
+  ```
+  Username: SUNet ID
+  Password: SUNet Password
+  ```
 
 To request a Nero account, please see the [Getting Started][url_account]
 page.
 
-!!! important "Resetting passwords"
 
-    Nero does **not** store your SUNet ID password. As a consequence, we
-    are unable to reset your password. If you require password assistance,
-    please see the [SUNet Account page][url_suaccounts].
+{% include important.html content="Resetting passwords<br/>
+Nero does **not** store your SUNet ID password.  As a consequence, we
+    are unable to reset your SUNet password.  If you require password assistance,
+    please see the [SUNet Account page][url_suaccounts]." %}
+    
 
 ## Connection
 
 You MUST be connected to the Stanford VPN to connect to the system; information about
-setting up the VPN is available at https://vpn.stanford.edu
+setting up the VPN is available at [Stanford VPN][url_vpn]
 
 Access to Nero is provided via Secure Shell (SSH) login. Most Unix-like
 operating systems provide an SSH client by default that can be accessed by
@@ -48,13 +43,6 @@ To login to Nero, open a terminal and type the following command, where
 $ ssh <sunetid>@nero-login.stanford.edu
 ```
 
-Upon logging in, you will be connected to one of Nero's load-balanced login
-node. You should be automatically directed to the least-loaded login node at
-the moment of your connection, which should give you the best possible
-environment to work.
-
---8<--- "_host_keys.md"
-
 
 ### Authentication
 
@@ -62,7 +50,7 @@ environment to work.
 
 To ease access and increase compatibility[^krb_legacy] with different
 platforms, Nero allows a simple password-based authentication mechanism for
-SSH.[^auth_methods].
+SSH.
 
 Upon connection, you will be asked for your SUNet ID password with the
 following prompt:
@@ -101,14 +89,13 @@ authentication factor with a message like this:
     Passcode or option (1-3):
 
 
-!!! tip "Avoiding two-factor prompt on each connection"
-
-    If you routinely open multiple sessions to Nero, having to confirm each
+{% include tip.html content="Avoiding two-factor prompt on each connection<br/>
+If you routinely open multiple sessions to Nero, having to confirm each
     one of them with a second authentication factor could rapidely become
     cumbersome. To work around this, the OpenSSH client allows multiplexing
     channels and re-using existing authenticated for opening new sessions.
     Please see the [Advanced Connection Options][url_avoid_duo] page for more
-    details.
+    details." %}
 
 If your second factor is accepted, you'll see the following message:
 
@@ -116,10 +103,7 @@ If your second factor is accepted, you'll see the following message:
 
 ### Authentication failures
 
-!!! danger "Excessive authentication failures"
-
-    Entering an invalid password multiple times will result in a (temporary)
-    ban of your IP address.
+{% include warning.html content="Excessive authentication failures<br/> Entering an invalid password multiple times will result in a (temporary) ban of your IP address." %}
 
 To prevent brute-force password guessing attacks on Nero login nodes, we
 automatically block IP addresses that generate too many authentication failures
@@ -171,26 +155,23 @@ section][url_submit].
 
 [comment]: #  (link URLs -----------------------------------------------------)
 
-#[url_prereq]:       /docs/getting-started/prerequisites
-[url_account]:      /docs/getting-started/index.md#how-to-request-an-account
-#[url_avoid_duo]:    /docs/advanced-topics/connection#avoiding-multiple-duo-prompts
-#[url_other_auth]:   /docs/advanced-topics/connection#authentication-methods
+[url_account]:      /getting-started.html#how-to-request-an-account
 [url_suaccounts]:   https://accounts.stanford.edu/
 [url_sunet]:        https://uit.stanford.edu/service/accounts/sunetids
 [url_minsec]:       https://uit.stanford.edu/guide/securitystandards
 [url_twostep]:      https://uit.stanford.edu/service/webauth/twostep
-#[url_login]:        /docs/overview/glossary/#login-nodes
-[url_submit]:       /docs/getting-started/submitting
+[url_submit]:       /submitting.html
 [url_contact]:      mailto:srcc-support@stanford.edu
-#[url_sshfs]:        /docs/user-guide/storage/data-transfer#sshfs
 [url_vpn]:          https://uit.stanford.edu/service/vpn
 
 [comment]: #  (footnotes -----------------------------------------------------)
 
-[^krb_legacy]: On Nero 1.0, GSSAPI tokens (based on Kerberos tickets)
-were the only allowed authentication method, which could cause some
-interoperability with third-party SSH clients.
+{% include callout.html content="Footnotes" type="default" %}
 
-[^auth_methods]: For other methods of authentication, see the [Advanced
- Connection Options][url_other_auth] page.
+[^krb_legacy]: On Nero 1.0, GSSAPI tokens (based on Kerberos tickets) were the only allowed authentication method, which could cause some interoperability with third-party SSH clients.
+
+
+
+
+
 {% include links.html %}

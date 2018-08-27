@@ -1,10 +1,10 @@
 # This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
 
-
 entries:
-- title: Getting Started with Nero Cluster
-  product: Getting Started
+- title: Blah Blad
+  product: User Guide
   folders:
+
 
   - title:
     output: pdf
@@ -19,24 +19,27 @@ entries:
       output: pdf
       type: frontmatter
 
-  - title: Getting Started
+  - title: User Guide
     output: web, pdf
+    url: /user_guide_landing_page.html
     folderitems:
-    - title: Prerequisites
-      url: /getting-started.html
-      output: web
 
-    - title: Connecting to Nero Cluster
-      url: /connecting.html
+    - title: Storage
       output: web, pdf
+      url: /storage.html
 
-    - title: Submitting
-      url: /submitting.html
+    - title: Runing Jobs
       output: web, pdf
+      url: /running_jobs.html
+
+
+    - title: Troubleshooting
+      output: web, pdf
+      url: /troubleshooting.html
+    
   - title: Home
     output: web, pdf
     folderitems:
     - title: Home
       url: /index.html
       output: web
-    

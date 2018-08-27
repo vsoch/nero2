@@ -3,6 +3,7 @@ title: Prerequisites
 keywords: start
 summary: "General overview about the prerequisites to using the Nero Onprem Cluster"
 sidebar: home_sidebar
+editable: true
 permalink: getting-started.html
 folder: getting-started
 ---
@@ -143,7 +144,7 @@ For an introduction to shell scripting, you can refer to:
 [url_cygwin]:       https://cygwin.com
 [url_ssh_clients]:  https://en.wikipedia.org/wiki/Comparison_of_SSH_clients#Platform
 
-[url_request]:      #how-to-request-an-account
+[url_request]:      /getting-started.html/#how-to-request-an-account
 [url_ssh]:          #ssh-clients
 [url_unix]:         #unixlinux-resources
 [url_bash]:         #shell-scripting

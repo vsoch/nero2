@@ -13,7 +13,7 @@ entries:
         url: /getting-started.html
         output: web
 
-      - title: Connecting to Nero Cluster
+      - title: Connecting
         url: /connecting.html
         output: web, pdf
 

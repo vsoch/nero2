@@ -48,9 +48,8 @@ $ ssh <sunetid>@nero-login.stanford.edu
 
 #### Password
 
-To ease access and increase compatibility[^krb_legacy] with different
-platforms, Nero allows a simple password-based authentication mechanism for
-SSH.
+To ease access and increase compatibility with different platforms, 
+Nero allows a simple password-based authentication mechanism for SSH.
 
 Upon connection, you will be asked for your SUNet ID password with the
 following prompt:
@@ -88,14 +87,6 @@ authentication factor with a message like this:
 
     Passcode or option (1-3):
 
-
-{% include tip.html content="Avoiding two-factor prompt on each connection<br/>
-If you routinely open multiple sessions to Nero, having to confirm each
-    one of them with a second authentication factor could rapidely become
-    cumbersome. To work around this, the OpenSSH client allows multiplexing
-    channels and re-using existing authenticated for opening new sessions.
-    Please see the [Advanced Connection Options][url_avoid_duo] page for more
-    details." %}
 
 If your second factor is accepted, you'll see the following message:
 
@@ -163,13 +154,6 @@ section][url_submit].
 [url_submit]:       /submitting.html
 [url_contact]:      mailto:srcc-support@stanford.edu
 [url_vpn]:          https://uit.stanford.edu/service/vpn
-
-[comment]: #  (footnotes -----------------------------------------------------)
-
-{% include callout.html content="Footnotes" type="default" %}
-
-[^krb_legacy]: On Nero 1.0, GSSAPI tokens (based on Kerberos tickets) were the only allowed authentication method, which could cause some interoperability with third-party SSH clients.
-
 
 
 

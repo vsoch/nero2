@@ -125,7 +125,7 @@ $ squeue -u $USER
 ```
 
 The scheduler will automatically create an output file that will contain the
-result of the commands run in the script file. That output file is names
+result of the commands run in the script file. That output file is named
 `slurm-<jobid>.out` by default, but can be customized via submission options.
 In the above example, you can list the contents of that output file with the
 following commands:

@@ -11,7 +11,7 @@ site_title: Nero documentation
 
 company_name: Research Computing
 # this appears in the footer
-
+baseurl:          /pages
 github_editme_path: 
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 

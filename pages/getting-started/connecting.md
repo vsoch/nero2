@@ -146,7 +146,7 @@ section][url_submit].
 
 [comment]: #  (link URLs -----------------------------------------------------)
 
-[url_account]:      /getting-started.html#how-to-request-an-account
+[url_account]:      /nero2/getting-started.html#how-to-request-an-account
 [url_suaccounts]:   https://accounts.stanford.edu/
 [url_sunet]:        https://uit.stanford.edu/service/accounts/sunetids
 [url_minsec]:       https://uit.stanford.edu/guide/securitystandards

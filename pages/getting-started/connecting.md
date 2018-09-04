@@ -2,6 +2,7 @@
 title: Connecting to Nero Cluster
 keywords: connecting
 sidebar: home_sidebar
+editable: true
 permalink: connecting.html
 folder: getting-started
 ---

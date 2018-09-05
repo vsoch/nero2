@@ -10,8 +10,9 @@ site_title: Nero documentation
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 company_name: Research Computing
+
 # this appears in the footer
-site.repo: https://github.com/cdoane/nero2
+repo: https://github.com/christadoane/nero2
 
 baseurl: /nero2
 github_editme_path: 
